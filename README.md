@@ -1,15 +1,18 @@
 # Trucking Management README
 
 ## TODO:
-1. Set up Address table
-2. Set up Loads table
-3. Dowload adminlte dash
+2. Set up Loads table(further down the line)
+3. Download adminlte dash
 4. Create Factories
 5. Seed database
 6. Set-up Relationships
-7. Set up Role Table
+9. Zip table
+11. Set up phpunit xml for testing
 
 ## Relationships:
 1. User::belongsTo Role
 2. Role::hasMany Users
+3. Address::belongsTo City
+4. City::hasMany Addresses
+5. User::belongsTo Address
 
