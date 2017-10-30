@@ -7,6 +7,7 @@
 6. Set-up Relationships
 11. Set up phpunit xml for testing
 12. Configure google oauth
+13. Make sure users default to some role.
 
 ## Relationships:
 1. User::belongsTo Role
