@@ -6,7 +6,6 @@
 4. Create Factories
 5. Seed database
 6. Set-up Relationships
-9. Zip table
 11. Set up phpunit xml for testing
 
 ## Relationships:
