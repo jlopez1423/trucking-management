@@ -2,11 +2,11 @@
 
 ## TODO:
 2. Set up Loads table(further down the line)
-3. Download adminlte dash
 4. Create Factories
 5. Seed database
 6. Set-up Relationships
 11. Set up phpunit xml for testing
+12. Configure google oauth
 
 ## Relationships:
 1. User::belongsTo Role
@@ -15,3 +15,8 @@
 4. City::hasMany Addresses
 5. User::belongsTo Address
 
+### Documentation to adminLTE
+https://github.com/acacha/adminlte-laravel
+
+Link to admin-lte social-auth:
+https://github.com/acacha/laravel-social
