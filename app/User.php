@@ -36,7 +36,7 @@ class User extends Authenticatable
     public function address()
     {
 
-        return $this->belongsToMany( 'App\Address' );
+        return $this->belongsTo( 'App\Address' );
 
     }
 
