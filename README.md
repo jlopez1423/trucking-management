@@ -1,13 +1,13 @@
 # Trucking Management README
 
 ## TODO:
-2. Set up Loads table(further down the line)
-4. Create Factories
-5. Seed database
-6. Set-up Relationships
-11. Set up phpunit xml for testing
-12. Configure google oauth
-13. Make sure users default to some role.
+* Create Factories
+* Seed database
+* Set-up Relationships
+* Set up phpunit xml for testing
+* Make sure users default to some role.
+* Set up Google Auth
+* Configure google oauth
 
 ## Relationships:
 1. User::belongsTo Role
