@@ -168,6 +168,7 @@ return [
         * Acacha AdminLTE template provider
         */
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
+        Acacha\LaravelSocial\Providers\LaravelSocialServiceProvider::class,
 
         /*
          * Package Service Providers...
