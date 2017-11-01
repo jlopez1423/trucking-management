@@ -31,8 +31,19 @@ $factory->define(App\User::class, function (Faker $faker) {
     ];
 });
 
+/////** City Factory */
+$factory->define( App\City::class, function( Faker $faker ){
 
-/** Address Factory */
+    return [
+
+        'name' => str_random(10)
+
+    ];
+
+});
+
+//
+///** Address Factory */
 $factory->define( App\Address::class, function(Faker $faker ){
 
     return [
@@ -60,19 +71,8 @@ $factory->define( App\Address::class, function(Faker $faker ){
         ];
 
 });
-
-/** City Factory */
-$factory->define( App\City::class, function( Faker $faker ){
-
-    return [
-
-        'name' => $faker->city
-
-    ];
-
-});
-
-/** State Factory */
+//
+///** State Factory */
 $factory->define( App\State::class, function( Faker $faker ){
 
     return [

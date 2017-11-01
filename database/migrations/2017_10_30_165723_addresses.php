@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class StateTable extends Migration
+class Addresses extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,17 @@ class StateTable extends Migration
      */
     public function up()
     {
-        Schema::create( 'state_table', function ( Blueprint $table ){
+        Schema::create( 'addresses', function ( Blueprint $table ){
 
             $table->increments('id');
 
-            $table->string( 'state_code', 2 );
+            $table->string( 'street' );
+
+            $table->unsignedInteger( 'city_id' );
+
+            $table->unsignedInteger( 'state_id' );
+
+            $table->unsignedInteger( 'zip_id' );
 
             $table->timestamps();
 
@@ -31,8 +37,7 @@ class StateTable extends Migration
      */
     public function down()
     {
-
-        Schema::dropIfExists( 'state_table' );
-
+        //
+        Schema::dropIfExists( 'addresses' );
     }
 }
